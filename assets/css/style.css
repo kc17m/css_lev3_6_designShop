@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+@font-face {
+    font-family: Karla;
+    src: url(../font/Karla/static/Karla-Medium.ttf);
+}
+
+header, main, footer {
+    font-family: Karla;
+    width: 90%;
+    margin: 3% auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: unset;
+    color: unset;
+}
+
+header a:hover, div p, .copy  {
+    color: #848484;
+}
+
+
+main a img:hover {
+    box-shadow: -10px -10px 30px grey;
+    opacity: 0.3;  
+}
+
+header div {
+    width: 30%;
+    display:flex;
+    justify-content: space-between;
+}
+
+.imgGrid {   
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 0.6fr 0.6fr 1fr .6fr .6fr 1fr .6fr .6fr 1fr .6fr;
+    grid-gap: .6% 2%;
+}
+
+figure {
+    line-height: 1rem;
+}
+ 
+h2 {
+    font-size: 1.3rem;
+    margin: 0 0 5% 0;
+}
+
+figcaption {
+    margin: 2% 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+figure img {
+    width: 100%;
+}
+
+
+.img1, .img2, .img3, .img4, .img5 {
+    grid-column: 1 / span 3;
+}
+
+.img1 {
+    grid-row: 1;
+}
+
+.img2 {
+    grid-row: 4;
+}
+
+.img3 {
+    grid-row: 7;
+}
+
+.img4 {
+    grid-row: 10;
+}
+
+.img5 {
+    grid-row: 13;
+}
+
+
+/* footer  */
+footer {
+    margin: 60% auto 5%; ;
+}
+
+.bold, footer a {
+    font-weight: 900;
+}
+
+p {
+    font-size: 0.9rem;
+  }
+
+.italics {
+    font-style: italic;
+}
+
+.gridtxt {
+    display: grid;
+    grid-template-columns: 35% 16% 29% 21%;
+    line-height: 1.8rem;
+    gap: 1%;
+    align-items: center;
+    
+}
+
+.designShop, .contact, .newsletter, .find {
+    margin: 8% 0;
+}
+
+.carefully {
+    grid-column: 1;
+    grid-row: 2;
+}
+.founded {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.spam {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.email {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.work {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.insta {
+    grid-column: 4;
+    grid-row: 3;
+}
+
+.twitter {
+    grid-column: 4;
+    grid-row: 4;
+}
+
+.copy {
+    margin: 8% 0;
+}
+
+
+@media screen and (max-width: 576px) {
+    header div {
+        width: 50%;
+        font-size: 0.8rem;
+    }
+
+    .designShop, .contact, .newsletter, .find {
+        margin: 5% 0;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+     h2 {
+        font-size: 1rem;
+       letter-spacing: .1rem;
+    }
+
+    p{
+        font-size: .7rem;
+    }
+
+    .imgGrid {   
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(32, .1fr);        
+        gap: .2%;
+    }
+
+
+    .img1, .img2, .img3, .img4, .img5 {
+        grid-column: 1;
+    }
+    
+    .img1 {
+        grid-row: 1;
+    }
+    
+    .img2 {
+        grid-row: 8;
+    }
+    
+    .img3 {
+        grid-row: 15;
+    }
+    
+    .img4 {
+        grid-row: 22;
+    }
+    
+    .img5 {
+        grid-row: 29;
+    }
+
+    footer {
+        margin: 248% auto 5%;
+    }
+
+    .gridtxt {
+        grid-template-columns: 100%;
+        line-height: 1rem;
+        margin: 20% 0;
+    }
+
+    .carefully {
+        grid-row: 2;
+    }
+    .founded {       
+        grid-row: 3;
+    }
+    
+    .contact {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .email {
+        grid-column: 1;
+        grid-row: 5;
+    }
+    .work {
+        grid-column: 1;
+        grid-row: 6;
+    }
+
+    .newsletter {
+        grid-column: 1;
+        grid-row: 7;
+    }
+    .click {
+        grid-column: 1;
+        grid-row: 8;
+    }
+    .spam {
+        grid-column: 1;
+        grid-row: 9;
+    }
+
+    .find {
+        grid-column: 1;
+        grid-row: 10;
+    }
+    
+    .facebook {
+        grid-column: 1;
+        grid-row: 11;
+    }
+
+    .insta {
+        grid-column: 1;
+        grid-row: 12;
+    }
+    
+    .twitter {
+        grid-column: 1;
+        grid-row: 13;
+    }
+
+     
+    .copy {
+        text-align: center;
+        
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
