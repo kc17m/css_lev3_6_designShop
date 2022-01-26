@@ -175,7 +175,7 @@ p {
         width: 50%;
         font-size: 0.8rem;
     }
-
+/* burger menu versuch - unfinished */
     label {
         display: block;
         cursor: pointer;
@@ -197,7 +197,7 @@ p {
     #toogle:checked + .menu {
         display: block;
     }
-
+/* -ende burger menu versuch */
 
 
     .designShop, .contact, .newsletter, .find {
@@ -242,7 +242,7 @@ p {
     }
 
     footer {
-        margin: 248% auto 5%;
+        margin: 160% auto 5%;
     }
 
     .gridtxt {
